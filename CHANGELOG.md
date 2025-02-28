@@ -5,7 +5,6 @@
 - Enhanced error handling for better reliability.
 - Code optimizations and minor bug fixes.
 
-
 ## 0.0.3
 - Added missing documentation comments for all public API elements.
 - Fixed repository URL in `pubspec.yaml`.
