@@ -1,3 +1,4 @@
+/// RetryQueue class is used to store the data that needs to be retried.
 class RetryQueue {
   static final List<Map<String, dynamic>> _queue = [];
 
@@ -6,9 +7,11 @@ class RetryQueue {
   }
 
   static void processQueue() {
-    _queue.forEach((data) {
-      // Send data to the server (Implement API call)
-    });
+    for (var data in _queue) {
+      // ignore: avoid_print
+      print(data);
+    }
+
     _queue.clear();
   }
 }

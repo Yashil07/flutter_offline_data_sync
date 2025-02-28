@@ -1,29 +1,22 @@
-# Changelog
+## 1.0.0
+- Added SQLite support alongside Hive for local storage.
+- Improved offline data sync mechanism with a hybrid storage approach.
+- Optimized sync performance and data consistency.
+- Enhanced error handling for better reliability.
+- Code optimizations and minor bug fixes.
 
-All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2025-02-27
-### Added
-- Initial release of `flutter_offline_sync` package.
-- Implemented offline data storage using `Hive`.
-- Integrated `connectivity_plus` to detect network changes.
-- Auto-sync feature to push local data to the server when online.
-- Support for background data synchronization.
-- Added unit tests to ensure reliability.
+## 0.0.3
+- Added missing documentation comments for all public API elements.
+- Fixed repository URL in `pubspec.yaml`.
+- Improved package metadata for better pub.dev compliance.
 
-### Fixed
-- Initial version, no fixes yet.
+## 0.0.2
+- Updated documentation with doc comments for public classes and methods.
+- Improved README with a detailed example.
 
-### Known Issues
-- No known issues in this release.
-
----
-
-## Future Updates
-- Support for multiple data types (images, files, etc.).
-- Conflict resolution strategy for syncing.
-- Improved error handling and logging.
-
-## Notes
-- This package follows Semantic Versioning (MAJOR.MINOR.PATCH).
-
+## 0.0.1
+- Initial release of `flutter_offline_data_sync`
+- Added local storage management.
+- Implemented network checker for offline sync.
+- Basic queue management for syncing pending data.

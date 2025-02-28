@@ -1,7 +1,8 @@
+/// The main library for Flutter Offline Sync package.
 library flutter_offline_data_sync;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/local_storage/local_db.dart';
+export 'src/sync_manager/sync_manager.dart';
+export 'src/network_checker/network_checker.dart';
+export 'src/conflict_resolver/conflict_resolver.dart';
+export 'src/queue/retry_queue.dart';

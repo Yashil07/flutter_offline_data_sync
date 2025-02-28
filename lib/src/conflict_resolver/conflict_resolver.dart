@@ -1,3 +1,4 @@
+/// Handles conflict resolution between local and remote data.
 class ConflictResolver {
   /// Handles conflicts between local and server data
   static Map<String, dynamic> resolveConflict(

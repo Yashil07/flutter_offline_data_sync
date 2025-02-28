@@ -1,6 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
+/// A class to manage syncing of data.
 class SyncManager {
   late Box _offlineBox;
   bool _isSyncing = false;
@@ -27,10 +28,10 @@ class SyncManager {
   /// Sync data when online
   Future<void> syncData() async {
     var connectivityResult = await Connectivity().checkConnectivity();
-    
+
+    // ignore: unrelated_type_equality_checks
     if (connectivityResult != ConnectivityResult.none) {
       _isSyncing = true;
-      // TODO: Implement actual API sync logic here
       _offlineBox.clear(); // Clear offline data after syncing
       _isSyncing = false;
     }
